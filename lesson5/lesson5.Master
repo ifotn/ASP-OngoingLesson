@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="lesson5.master.cs" Inherits="lesson5.lesson5" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title>Contoso University</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <nav class="nav navbar-default">
+            <a href="default.aspx" class="nav navbar-brand">Contoso University</a>
+            <ul class="nav navbar-nav">
+                <li><a href="departments.aspx">Departments</a></li>
+                <li><a href="courses.aspx">Courses</a></li>
+                <li><a href="students.aspx">Students</a></li>
+            </ul>
+        </nav>
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        <footer class="panel-footer">Copyright &copy Haden Hiles ASP.net</footer>
+        <!--jquery CDN -->
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </body>
+</html>
