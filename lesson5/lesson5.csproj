@@ -69,8 +69,10 @@
   <ItemGroup>
     <Content Include="courses.aspx" />
     <Content Include="default.aspx" />
+    <Content Include="department.aspx" />
     <Content Include="departments.aspx" />
     <Content Include="lesson5.Master" />
+    <Content Include="packages.config" />
     <EntityDeploy Include="Models\Contoso.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Contoso.Designer.cs</LastGenOutput>
@@ -88,7 +90,6 @@
       <DependentUpon>Contoso.edmx</DependentUpon>
       <LastGenOutput>Contoso.cs</LastGenOutput>
     </Content>
-    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -115,6 +116,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="department.aspx.cs">
+      <DependentUpon>department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="department.aspx.designer.cs">
+      <DependentUpon>department.aspx</DependentUpon>
     </Compile>
     <Compile Include="departments.aspx.cs">
       <DependentUpon>departments.aspx</DependentUpon>

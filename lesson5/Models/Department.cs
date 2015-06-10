@@ -14,8 +14,15 @@ namespace lesson5.Models
     
     public partial class Department
     {
+        public Department()
+        {
+            this.Courses = new HashSet<Cours>();
+        }
+    
         public int DepartmentID { get; set; }
         public string Name { get; set; }
         public Nullable<decimal> Budget { get; set; }
+    
+        public virtual ICollection<Cours> Courses { get; set; }
     }
 }

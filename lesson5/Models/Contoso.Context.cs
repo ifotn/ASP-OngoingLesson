@@ -13,10 +13,10 @@ namespace lesson5.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ContosoEntities : DbContext
+    public partial class DefaultConnection : DbContext
     {
-        public ContosoEntities()
-            : base("name=ContosoEntities")
+        public DefaultConnection()
+            : base("name=DefaultConnection")
         {
         }
     
