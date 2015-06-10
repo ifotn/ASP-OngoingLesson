@@ -90,6 +90,7 @@
       <DependentUpon>Contoso.edmx</DependentUpon>
       <LastGenOutput>Contoso.cs</LastGenOutput>
     </Content>
+    <None Include="Properties\PublishProfiles\onGoingLesson.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
